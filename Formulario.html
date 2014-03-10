@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form action="procesar.php" method="post" name="frm">
+Registro de un usuario
+<TABLE BORDER=5>
+<TR>
+	<TD>Nombre</TD>
+	<TD>
+	<INPUT type="text" name="nombre">
+	</TD>
+</TR>
+
+<TR>
+	<TD>Apellido</TD>
+	<TD>
+	<INPUT type="text" name="apellido">
+	</TD>
+</TR>
+<TR>
+	<TD>Género</TD>
+	<TD>
+	Hombre:<INPUT type="radio" name="genero" value="M">
+	<br>
+	Mujer: <INPUT type="radio" name="genero" value="F">
+	</TD>
+</TR>
+
+<TR>
+	<TD>Ocupación</TD>
+	<TD>
+	<SELECT name="ocupación">
+		<OPTION VALUE="profesor">Profesor</OPTION>
+		<OPTION VALUE="estudiante">Estudiante</OPTION>
+		<OPTION VALUE="ingeniero">Ingeniero</OPTION>
+		<OPTION VALUE="jubilado">Jubilado</OPTION>
+		<OPTION VALUE="otro">Otro</OPTION>
+	</SELECT>
+	</TD>
+</TR>
+<TR>
+	<TD>Comentarios</TD>
+	<TD>
+	<TEXTAREA rows="3" name="comentarios">Escriba aquí sus comentarios</TEXTAREA>
+
+	</TD>
+</TR>
+
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="submit" value="Enviar">
+	</TD>
+</TR>
+</TABLE>
+</FORM>
+</body>
+</html>
